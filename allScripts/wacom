@@ -1,0 +1,11 @@
+#Wacom configuration commands
+xsetwacom set "Wacom Bamboo Pen stylus" mode relative
+
+xsetwacom set "Wacom Bamboo Pad pad" Button 1 "key shift"
+xsetwacom set "Wacom Bamboo Pad pad" Button 3 "key ctrl"
+xsetwacom set "Wacom Bamboo Pad pad" Button 8 "key ctrl z"
+xsetwacom set "Wacom Bamboo Pad pad" Button 9 "key ctrl shift z"
+
+xsetwacom set "Wacom Bamboo Pad pad" AbsWheelUp "key minus"
+xsetwacom set "Wacom Bamboo Pad pad" AbsWheelDown "key plus"
+
