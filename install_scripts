@@ -1,1 +1,9 @@
-cp allScripts/* /usr/local/bin/
+#!/bin/bash
+#Hello there, weary traveler, so you are looking for some code uh? well, be beware...
+
+#cp allScripts/* /usr/local/bin/  #Old directory, too invasive for the system
+mkdir $HOME/bin
+cp allScripts/* $HOME/bin/
+chmod +x $HOME/bin/*
+
+#What? where is the path? There is no path my dear... actually already exists in ~/.profile

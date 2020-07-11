@@ -1,0 +1,5 @@
+#!/bin/bash
+#Generated with ARandR
+#Custom script that sets a custom primary monitor to show only
+#Intended to be used with a key binding
+xrandr --output HDMI-A-0 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DVI-D-0 --off --output DisplayPort-0 --off
