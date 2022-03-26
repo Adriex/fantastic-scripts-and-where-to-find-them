@@ -1,0 +1,2 @@
+man syscalls
+man 7 inode

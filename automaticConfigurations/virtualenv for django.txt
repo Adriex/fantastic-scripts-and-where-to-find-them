@@ -1,0 +1,61 @@
+#Primera vez
+
+##Instalacion (Deprecada)
+
+- sudo apt-get install python-pip
+- sudo apt install virtualenv
+
+##Instalacion
+- sudo apt install python3-pip
+- sudo pip3 install virtualenvwrapper
+
+##Añadir a ~/.zshrc o ~/.zshrc :
+#Virtualenvwrapper settings:
+export WORKON_HOME=$HOME/.virtualenvs
+VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+. /usr/local/bin/virtualenvwrapper.sh
+
+
+#Creacion de Entorno Virtual
+- mkvirtualenv name_of_your_env
+- workon name_of_your_env
+- cd CARPETA_PROYECTO
+- python manage.py runserver "Puerto"
+
+#Comandos utiles
+Para salir del entorno virtual:
+- deactivate
+Para mostrar los entornos:
+- lsvirtualenv
+Para eliminar uno:
+- rmvirtualenv name_of_your_env
+Para copiarlo:
+- cpvirtualenv old_virtual_env new_virtual_env
+##Preparacion de Django
+
+- mkvirtualenv "Entorno"
+- workon "Entorno"
+
+- pip install django  ##SIN SUDO
+- django-admin.py startproject "proyecto"
+- cd "proyecto"
+- python manage.py runserver "Puerto"
+
+##Crear aplicacion en DJANGO
+
+- python manage.py startapp NOMBREAPPLIACION
+
+##Otras cosas
+
+- python manage.py //Muestra todos los comandos para hacer
+- python manage.py startapp NOMBREAPPLIACION
+- python manage.py syncdb
+- python manage.py migrate
+	- The migrate command looks at the INSTALLED_APPS setting and creates any necessary
+	- database tables according to the database settings in your mysite/settings.py file and the
+	- databasemigrations shipped with the app (we’ll cover those later). You’ll see a message for
+	- each migration it applies.
+- python manage.py runserver
+
+#https://itnext.io/how-to-set-up-python-virtual-environment-on-ubuntu-20-04-a2c7a192938d
+
