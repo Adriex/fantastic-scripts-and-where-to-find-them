@@ -2,9 +2,31 @@
 #Hello there, weary traveler, so you are looking for some code uh? well, be beware...
 
 #cp allScripts/* /usr/local/bin/  #Old directory, too invasive for the system
-mkdir $HOME/.bin
-cp allScripts/* $HOME/.bin/
-chmod +x $HOME/.bin/*
-export PATH="$HOME/.bin:$PATH"
-echo 'PATH="$HOME/.bin:$PATH"' >> $HOME/.bashrc
-echo 'PATH="$HOME/.bin:$PATH"' >> $HOME/.zshrc
+DIR="$HOME/.bin"
+
+if [ ! -d "$DIR" ]; then
+  echo "Creating custom folder..."
+  mkdir DIR
+fi
+
+echo "Installing custom files in ${DIR}..."
+cp allScripts/* $DIR
+
+echo "Giving your BEATIFUL scripts execution permissions..."
+chmod +x $DIR/*
+
+echo "Exporting path..."
+export PATH="$DIR:$PATH"
+
+echo "Adding path..."
+
+if ! grep 'export PATH='$DIR':$PATH' $HOME/.zshrc
+then
+	echo export PATH="$DIR:\$PATH" >> $HOME/.zshrc
+fi
+
+if ! grep 'export PATH='$DIR':$PATH' $HOME/.bashrc
+then
+	echo export PATH="$DIR:\$PATH" >> $HOME/.bashrc
+fi
+echo "Listo"

@@ -2,4 +2,4 @@
 #Generated with ARandR
 #Custom script that sets a custom dual monitor setup
 #Intended to be used with a key binding
-xrandr --output HDMI-A-0 --primary --mode 1920x1080 --pos 1360x0 --rotate normal --output DVI-D-0 --off --output DisplayPort-0 --mode 1360x768 --pos 0x156 --rotate normal
+xrandr --output HDMI-A-0 --primary --mode 1920x1080 --pos 0x280 --rotate normal --output DVI-D-0 --off --output DisplayPort-0 --mode 1360x768 --pos 1920x0 --rotate right
