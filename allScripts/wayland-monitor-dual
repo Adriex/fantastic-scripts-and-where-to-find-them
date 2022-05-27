@@ -1,0 +1,4 @@
+#!/bin/sh
+# Custom script that sets a custom dual monitor setup
+# Intended to be used with a key binding
+xrandr --output XWAYLAND0 --mode 768x1360 --pos 1920x0 --rotate normal --output XWAYLAND1 --primary --mode 1920x1080 --pos 0x280 --rotate normal

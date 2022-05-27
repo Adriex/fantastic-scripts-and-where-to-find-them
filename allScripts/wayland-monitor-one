@@ -1,0 +1,5 @@
+#!/bin/sh
+#Generated with ARandR
+#Custom script that turns off auxiliar monitor
+#Intended to be used with a key binding
+xrandr --output XWAYLAND0 --off --output XWAYLAND1 --primary --mode 1920x1080 --pos 0x280 --rotate normal
